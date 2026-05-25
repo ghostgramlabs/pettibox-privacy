@@ -8,7 +8,7 @@
 <body>
   <h1>Privacy Policy for PettiBox</h1>
 
-  <p><strong>Effective Date:</strong> May 10, 2026</p>
+  <p><strong>Effective Date:</strong> May 25, 2026</p>
 
   <p>
     PettiBox is developed by GhostGram Labs. This Privacy Policy explains how
@@ -18,8 +18,8 @@
   <h2>1. Overview</h2>
   <p>
     PettiBox is an offline-first Android app that helps you save links, notes,
-    images, screenshots, PDFs, text, and files so you can organize and search
-    them later.
+    images, screenshots, PDFs, text, and files so you can organize, search, and
+    find them later.
   </p>
   <p>
     PettiBox does not require an account and does not operate a backend server
@@ -32,27 +32,31 @@
   </p>
   <ul>
     <li>Links and URLs</li>
-    <li>Text and notes</li>
+    <li>Text, notes, and selected text shared from other apps</li>
     <li>Images and screenshots</li>
     <li>PDFs and files</li>
-    <li>Titles, tags, categories, and notes you add</li>
+    <li>Titles, tags, collections, notes, and reminders you add</li>
     <li>Text extracted from images or PDFs for search</li>
+    <li>Link metadata such as page titles, descriptions, and preview images</li>
   </ul>
   <p>
-    This information is stored locally on your device in the app’s private
-    storage unless you choose to share or export it.
+    This information is stored locally on your device in PettiBox app storage
+    unless you choose to share, export, back up, or restore it.
   </p>
 
   <h2>3. Text Recognition / OCR</h2>
   <p>
-    PettiBox may scan images and PDFs to extract text so that your saved items
-    can be searched. This text recognition is used to improve search inside the
-    app.
+    PettiBox may scan images and PDFs to extract text so your saved items can be
+    searched inside the app.
   </p>
   <p>
-    You can turn off automatic text recognition in the app’s Settings. When it
-    is turned off, new images and PDFs will still be saved, but PettiBox will
-    not extract searchable text from them.
+    PettiBox uses text recognition functionality, including Google ML Kit text
+    recognition, to help process saved images and documents for searchable text.
+  </p>
+  <p>
+    You can turn off automatic text recognition in PettiBox Settings. When it is
+    turned off, new images and PDFs will still be saved, but PettiBox will not
+    automatically extract searchable text from them.
   </p>
 
   <h2>4. Link Metadata and Thumbnails</h2>
@@ -63,32 +67,64 @@
   </p>
   <p>
     When PettiBox contacts a webpage for metadata, the website you saved may
-    receive standard connection information such as your IP address and browser
+    receive standard connection information such as your IP address and
     user-agent. PettiBox does not use this to track you.
   </p>
 
-  <h2>5. Permissions</h2>
-  <p>PettiBox may request or use the following permissions:</p>
+  <h2>5. Reminders and Notifications</h2>
+  <p>
+    If you set a reminder for a saved item, PettiBox stores the reminder time on
+    your device and uses Android alarms and notifications to remind you.
+  </p>
+  <p>
+    PettiBox may request notification permission so it can show reminder
+    notifications. PettiBox may also use Android alarm permissions to deliver
+    reminders closer to the time you choose.
+  </p>
+  <p>
+    PettiBox may listen for device reboot, time, or timezone changes so it can
+    re-schedule reminders that should still fire. Reminder data is not sent to a
+    GhostGram Labs server.
+  </p>
+
+  <h2>6. Permissions</h2>
+  <p>PettiBox may request or use the following permissions and Android features:</p>
   <ul>
     <li>
       <strong>Internet:</strong> Used to fetch link metadata, page titles, and
       preview images for saved links.
     </li>
     <li>
-      <strong>Media / Images access:</strong> Used only when you choose images
-      or screenshots to save into PettiBox.
+      <strong>Notifications:</strong> Used only to show reminder notifications
+      you set in PettiBox.
     </li>
     <li>
-      <strong>File access through Android picker/share sheet:</strong> Used only
-      when you choose to save files, PDFs, images, or other shared content.
+      <strong>Exact alarm / alarm scheduling:</strong> Used to deliver reminders
+      at or near the time you choose.
+    </li>
+    <li>
+      <strong>Run after reboot:</strong> Used to re-schedule pending reminders
+      after a device restart or time change.
+    </li>
+    <li>
+      <strong>Media / image access:</strong> Used only when you choose images or
+      screenshots to save into PettiBox.
+    </li>
+    <li>
+      <strong>File access through Android picker or share sheet:</strong> Used
+      only when you choose to save files, PDFs, images, or other shared content.
+    </li>
+    <li>
+      <strong>Folder access for backups:</strong> Used only if you choose a
+      folder where PettiBox should copy backup files.
     </li>
   </ul>
 
-  <h2>6. Sharing and Exporting</h2>
+  <h2>7. Sharing, Exporting, and File Access</h2>
   <p>
     PettiBox lets you share individual saved items, attachments, or export a
-    backup file. When you choose to share or export content, that content is
-    sent to the app or service you select, such as email, cloud storage, or a
+    backup file. When you choose to share or export content, that content is sent
+    to the app or service you select, such as email, cloud storage, or a
     messaging app.
   </p>
   <p>
@@ -96,17 +132,46 @@
     content after you choose to share or export it.
   </p>
 
-  <h2>7. Backup Files</h2>
+  <h2>8. Backup Files and Restore</h2>
   <p>
-    PettiBox can create a JSON backup file containing your saved data, such as
-    saved items, categories, attachments, tags, and related metadata. Backup is
-    started only when you choose to export it.
+    PettiBox can create backup files containing your saved data, including saved
+    items, collections, attachments, tags, reminders, archive/favorite/pinned
+    status, extracted text, and related metadata.
   </p>
   <p>
-    You are responsible for where you store or send the backup file.
+    PettiBox may create automatic local safety copies if you enable automatic
+    backup in Settings. These backups are stored on your device in PettiBox's
+    backup folder, and PettiBox keeps recent copies to help avoid excessive
+    storage use.
+  </p>
+  <p>
+    If you choose a backup folder, PettiBox may also copy backup files to that
+    folder. You are responsible for where you store, copy, upload, or share
+    backup files.
+  </p>
+  <p>
+    On a fresh install or empty app state, PettiBox may check its own backup
+    folder for a PettiBox backup and ask whether you want to restore it. PettiBox
+    only checks its own backup folder automatically. If your backup is somewhere
+    else, you can manually choose a backup file from Settings.
   </p>
 
-  <h2>8. Data Collection</h2>
+  <h2>9. Archive and Deletion</h2>
+  <p>
+    PettiBox includes Archive as a safety net. Archived items remain stored on
+    your device and may remain searchable or recoverable inside the app.
+  </p>
+  <p>
+    When you permanently delete saved items or attachments, PettiBox removes the
+    corresponding local database records and local attachment files where
+    applicable.
+  </p>
+  <p>
+    Backup files you previously exported, shared, copied, or stored separately
+    are not automatically deleted when you delete content from PettiBox.
+  </p>
+
+  <h2>10. Data Collection</h2>
   <p>
     PettiBox does not collect your saved content on a GhostGram Labs server.
     PettiBox does not require login or account registration.
@@ -115,49 +180,58 @@
     PettiBox does not sell your personal information.
   </p>
 
-  <h2>9. Third-Party Services and Libraries</h2>
+  <h2>11. Third-Party Services and Libraries</h2>
   <p>
     PettiBox uses third-party Android libraries and services to provide app
     functionality, including image loading, local database storage, background
-    processing, and text recognition.
+    processing, file handling, link preview parsing, and text recognition.
   </p>
   <p>
     PettiBox may use Google ML Kit text recognition to process images and PDFs
     for searchable text.
   </p>
 
-  <h2>10. Data Retention and Deletion</h2>
+  <h2>12. Data Retention</h2>
   <p>
-    Saved content remains on your device until you delete it from the app or
-    uninstall PettiBox.
+    Saved content remains on your device until you archive it, delete it, export
+    it, restore over it, or uninstall PettiBox.
   </p>
   <p>
-    You can delete saved items and attachments inside the app. Uninstalling the
-    app removes app-local data from your device, subject to Android system
-    behavior and any backups you created or shared separately.
+    Uninstalling PettiBox removes app-local data from your device, subject to
+    Android system behavior and any backup files you created, copied, exported,
+    or shared separately.
+  </p>
+  <p>
+    PettiBox disables Android's automatic app-data backup for its private app
+    data. PettiBox backup files are created only through PettiBox's own backup
+    features.
   </p>
 
-  <h2>11. Children’s Privacy</h2>
+  <h2>13. Children’s Privacy</h2>
   <p>
     PettiBox is not intended for children under 13. GhostGram Labs does not
     knowingly collect personal information from children under 13.
   </p>
 
-  <h2>12. Security</h2>
+  <h2>14. Security</h2>
   <p>
     PettiBox stores saved content locally on your device using Android app
     storage. No method of storage or transmission is completely secure, but
     PettiBox is designed to keep your saved content local unless you choose to
-    share or export it.
+    share, export, back up, or restore it.
+  </p>
+  <p>
+    Backup files may contain saved content and attachments. You should store
+    backup files somewhere you trust.
   </p>
 
-  <h2>13. Changes to This Privacy Policy</h2>
+  <h2>15. Changes to This Privacy Policy</h2>
   <p>
     We may update this Privacy Policy from time to time. If changes are made,
     the updated policy will be made available with a new effective date.
   </p>
 
-  <h2>14. Contact</h2>
+  <h2>16. Contact</h2>
   <p>
     If you have questions about this Privacy Policy or PettiBox, contact:
   </p>
